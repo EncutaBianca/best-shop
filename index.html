@@ -2,299 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Loans.com</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      crossorigin="anonymous"
-    />
-    <title>Best Car</title>
   </head>
   <body>
-    <header>
+    <header class="header container">
+      <a href="#" class="header__logo">Loans.com</a>
       <nav>
-        <div class="nav-container">
-          <a href="#" class="logo">
-            <b>BestShop</b>
-          </a>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#why-us" class="nav-link active">Why us</a>
-            </li>
-            <li class="nav-item">
-              <a href="#prices" class="nav-link">Prices</a>
-            </li>
-            <li class="nav-item">
-              <a href="#benefits" class="nav-link">Benefits</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="header__nav">
+          <li class="nav__item"><a href="#">Rates & Fees</a></li>
+          <li class="nav__item"><a href="#">How to apply</a></li>
+          <li class="nav__item"><a href="#">Questions?</a></li>
+        </ul>
       </nav>
     </header>
-    <main>
-      <section class="section-hero position-relative">
-        <div class="container">
-          <div class="hero-box">
-            <h1>Sell More!</h1>
-            <p>Open shop on our platform and increase your sales</p>
-            <a href="#" type="button" class="btn btn-primary btn-hero"
-              >Open your shop</a
-            >
-          </div>
-          <img
-            class="img-fluid hero-img"
-            src="img/background.png"
-            alt="laptop and other office stuff"
-          />
-        </div>
-      </section>
-      <section class="section-popular" id="why-us">
-        <div class="container">
-          <h2>The most popular sales platform in country</h2>
-          <div class="sales-container">
-            <div class="sale">
-              <div class="icon-bg icon-bg--red"></div>
-              <h3>100000+</h3>
-              <p>daily entries</p>
+
+    <main class="main container">
+      <section class="main__intro">
+        <div class="intro__info">
+          <span class="info__small-heading">Personal Loan</span>
+          <h2 class="info__heading">
+            Put your plans<br />
+            into actions.
+          </h2>
+
+          <div class="info__icons">
+            <div class="icons__item">
+              <span class="item__text">Online application</span>
             </div>
-            <div class="sale">
-              <div class="icon-bg icon-bg--blue"></div>
-              <h3>200000+</h3>
-              <p>
-                seen products <br class="mobile-none" />
-                every day
-              </p>
+            <div class="icons__item">
+              <span class="item__text">Up to $50.000</span>
             </div>
-            <div class="sale">
-              <div class="icon-bg icon-bg--green"></div>
-              <h3>100000+</h3>
-              <p>
-                added posts <br class="mobile-none" />
-                daily
-              </p>
+            <div class="icons__item">
+              <span class="item__text">The money is yours in 48h</span>
             </div>
           </div>
         </div>
-      </section>
-      <section class="section-benefits" id="benefits">
-        <div class="container benefit-boxes">
-          <div class="box box--1">
-            <div class="benefit-text">
-              <h2>Be always first</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
-              </p>
-              <div class="divider divider--red"></div>
-            </div>
-            <div class="benefit-img-container">
-              <img
-                src="img/macbook2.png"
-                alt="macbook2"
-                class="img-fluid benefit-img"
+
+        <div class="intro__form">
+          <h3 class="form__heading">Let's change your life?</h3>
+          <form>
+            <div class="form__field">
+              <label for="name">Full name</label>
+              <input
+                type="text"
+                class="form__input"
+                id="name"
+                placeholder="John Doe"
               />
             </div>
-          </div>
-          <div class="box box--2">
-            <div class="benefit-img-container-center">
-              <img
-                src="img/iphone.png"
-                alt="macbook2"
-                class="img-fluid benefit-img-center"
+            <div class="form__field">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                placeholder="john.doe@apple.com"
               />
             </div>
-            <div class="benefit-text">
-              <h2>
-                Your shop is <br />
-                where you are!
-              </h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
-              </p>
-              <div class="divider divider--blue"></div>
-            </div>
-          </div>
-          <div class="box box--3">
-            <div class="benefit-text benefit-text--3">
-              <h2>Be always first</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
-              </p>
-              <div class="divider divider--green"></div>
-            </div>
-            <div class="benefit-img-container--3">
-              <img
-                src="img/trumpet2.png"
-                alt="trumpet"
-                class="img-fluid benefit-img--3"
+            <div class="form__field">
+              <label for="amount">How much do you need?</label>
+              <input
+                type="number"
+                class="form__input"
+                id="amount"
+                placeholder="1.000"
               />
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-pricing" id="prices">
-        <div class="container">
-          <h2 class="text-center pricing-heading">Pricing</h2>
-          <div class="cards">
-            <card class="card card--red text-center">
-              <h3>Basic</h3>
-              <p class="price price--red">$0</p>
-              <div class="checked-items">
-                <div class="checked">
-                  <i class="fa-solid fa-check"></i>
-                  <p>100 MB HDD</p>
-                </div>
-                <div class="checked">
-                  <i class="fa-solid fa-check"></i>
-                  <p>1 Subdomain</p>
-                </div>
-                <div class="checked">
-                  <i class="fa-solid fa-check"></i>
-                  <p>2 E-mails</p>
-                </div>
-                <div class="checked">
-                  <i class="fa-solid fa-x"></i>
-                  <p>2 Years License</p>
-                </div>
-                <div class="checked">
-                  <i class="fa-solid fa-x"></i>
-                  <p>Full Support</p>
-                </div>
-              </div>
-              <a href="#" class="btn checked-btn btn--red">Begin</a>
-            </card>
-            <card class="card card--blue text-center">
-              <h3>Professional</h3>
-              <p class="price price--blue">$25</p>
-              <div class="checked-items">
-                <div class="checked">
-                  <i class="fa-solid fa-check"></i>
-                  <p>500 MB HDD</p>
-                </div>
-                <div class="checked">
-                  <i class="fa-solid fa-check"></i>
-                  <p>2 Subdomain</p>
-                </div>
-                <div class="checked">
-                  <i class="fa-solid fa-check"></i>
-                  <p>5 E-mails</p>
-                </div>
-                <div class="checked">
-                  <i class="fa-solid fa-check"></i>
-                  <p>1 Year License</p>
-                </div>
-                <div class="checked">
-                  <i class="fa-solid fa-x"></i>
-                  <p>Full Support</p>
-                </div>
-              </div>
-              <a href="#" class="btn checked-btn btn--blue">Begin</a>
-            </card>
-            <card class="card card--green text-center">
-              <h3>Premium</h3>
-              <p class="price price--green">$60</p>
-              <div class="checked-items">
-                <div class="checked">
-                  <i class="fa-solid fa-check"></i>
-                  <p>2GB HDD</p>
-                </div>
-                <div class="checked">
-                  <i class="fa-solid fa-check"></i>
-                  <p>5 Subdomain</p>
-                </div>
-                <div class="checked">
-                  <i class="fa-solid fa-check"></i>
-                  <p>20 E-mails</p>
-                </div>
-                <div class="checked">
-                  <i class="fa-solid fa-check"></i>
-                  <p>2 Years License</p>
-                </div>
-                <div class="checked">
-                  <i class="fa-solid fa-check"></i>
-                  <p>Full Support</p>
-                </div>
-              </div>
-              <a href="#" class="btn checked-btn btn--green">Begin</a>
-            </card>
-          </div>
-        </div>
-      </section>
-      <section class="section-form" id="contact">
-        <div class="container-form">
-          <div class="contact-info">
-            <h2>Any questions?</h2>
-            <p>Leave your email address or call us!</p>
-            <div class="contact-details">
-              <div class="phone-box">
-                <i class="fa-solid fa-phone"></i>
-                <a href="phone:123456789">123 456 789</a>
-              </div>
-              <div class="mail-box">
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:info@bestshop.xyz">info@bestshop.xyz</a>
-              </div>
-            </div>
-          </div>
-          <form action="post" class="contact-form">
-            <label for="name">NAME</label>
-            <input type="text" id="name" />
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" />
-            <!-- <div class="checkbox-container">
-              <input type="checkbox" id="consent" />
-              <span class="checkbox-custom" for="consent"></span>
-              <label for="consent" class="checkbox-label">
-                I hereby give consent for my personal data included in my
-                application to be processed for the purposes of the recruitment
-                process under the European Parliament’s and Council of the
-                European Union Regulation on the Protection of Natural Persons
-                as of 27 April 2016, with regard to the processing of personal
-                data and on the free movement of such data, and repealing
-                Directive 95/46/EC (Data Protection Directive)</label
-              >
-            </div> -->
-            <label class="consent-text" for="consent">
-              <input type="checkbox" name="consent" />
-              I hereby give consent for my personal data included in my
-              application to be processed for the purposes of the recruitment
-              process under the European Parliament’s and Council of the
-              European Union Regulation on the Protection of Natural Persons as
-              of 27 April 2016, with regard to the processing of personal data
-              and on the free movement of such data, and repealing Directive
-              95/46/EC (Data Protection Directive)
-            </label>
-            <button type="submit" class="btn btn--blue btn-submit">Send</button>
+
+            <button type="submit" class="form__button">Check your rates</button>
           </form>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container container-footer">
-        <a href="#" class="logo">
-          <b>BestShop</b>
-        </a>
-        <div class="social-container">
-          <img src="img/Facebook.svg" class="icon-footer" alt="Facebook icon" />
-          <img src="img/Twitter.svg" class="icon-footer" alt="twitter icon" />
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
